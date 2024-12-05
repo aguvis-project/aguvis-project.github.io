@@ -1,157 +1,134 @@
+/* Enhanced base styles */
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #3498db;
+  --text-color: #2c3e50;
+  --background-color: #ffffff;
+  --section-spacing: 4rem;
+}
+
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Inter', 'Noto Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
-
-.footer .icon-link {
-    font-size: 25px;
-    color: #000;
-}
-
-.link-block a {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.dnerf {
-  font-variant: small-caps;
-}
-
-
-.teaser .hero-body {
-  padding-top: 0;
-  padding-bottom: 3rem;
-}
-
-.teaser {
-  font-family: 'Google Sans', sans-serif;
-}
-
-
-.publication-title {
-}
-
-.publication-banner {
-  max-height: parent;
-
-}
-
-.publication-banner video {
-  position: relative;
-  left: auto;
-  top: auto;
-  transform: none;
-  object-fit: fit;
-}
-
-.publication-header .hero-body {
+/* Enhanced header styles */
+.hero-body {
+  padding: 3rem 1.5rem;
 }
 
 .publication-title {
-    font-family: 'Google Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(120deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .publication-authors {
-    font-family: 'Google Sans', sans-serif;
-}
-
-.publication-venue {
-    color: #555;
-    width: fit-content;
-    font-weight: bold;
-}
-
-.publication-awards {
-    color: #ff3860;
-    width: fit-content;
-    font-weight: bolder;
-}
-
-.publication-authors {
-}
-
-.publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
-}
-
-.publication-authors a:hover {
-    text-decoration: underline;
+  margin: 2rem 0;
+  line-height: 1.8;
 }
 
 .author-block {
   display: inline-block;
+  margin: 0.25rem 0;
 }
 
-.publication-banner img {
+.author-block a {
+  color: var(--accent-color) !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.publication-authors {
-  /*color: #4286f4;*/
+.author-block a:hover {
+  color: #2980b9 !important;
+  text-decoration: underline;
 }
 
-.publication-video {
-    position: relative;
+/* Enhanced button styles */
+.publication-links .button {
+  margin: 0.5rem;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.publication-links .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Abstract section styling */
+.abstract {
+  margin: var(--section-spacing) 0;
+}
+
+.content.has-text-justified {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* BibTeX section styling */
+#BibTeX {
+  margin: var(--section-spacing) 0;
+}
+
+#BibTeX pre {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  font-family: 'Fira Code', monospace;
+  overflow-x: auto;
+}
+
+/* Navbar styling */
+.navbar-menu {
+  box-shadow: none;
+}
+
+.navbar-item {
+  color: var(--text-color);
+  transition: color 0.2s ease;
+}
+
+.navbar-item:hover {
+  color: var(--accent-color);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .publication-title {
+    font-size: 2rem;
+  }
+  
+  .content.has-text-justified {
+    padding: 1.5rem;
+  }
+  
+  .publication-links .button {
     width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-
-    overflow: hidden;
-    border-radius: 10px !important;
+    margin: 0.5rem 0;
+  }
 }
 
-.publication-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+/* Animation for page load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.publication-body img {
-}
-
-.results-carousel {
-  overflow: hidden;
-}
-
-.results-carousel .item {
-  margin: 5px;
-  overflow: hidden;
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  padding: 0;
-  font-size: 0;
-}
-
-.results-carousel video {
-  margin: 0;
-}
-
-
-.interpolation-panel {
-  background: #f5f5f5;
-  border-radius: 10px;
-}
-
-.interpolation-panel .interpolation-image {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.interpolation-video-column {
-}
-
-.interpolation-panel .slider {
-  margin: 0 !important;
-}
-
-.interpolation-panel .slider {
-  margin: 0 !important;
-}
-
-#interpolation-image-wrapper {
-  width: 100%;
-}
-#interpolation-image-wrapper img {
-  border-radius: 5px;
+.hero-body {
+  animation: fadeIn 0.8s ease-out;
 }
