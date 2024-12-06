@@ -39,6 +39,14 @@
 
 <body>
 
+  <div class="sidebar">
+    <h4>Table of Contents</h4>
+    <ul>
+      <li><a href="#OfflineExperiments">Offline Experiments</a></li>
+      <li><a href="#OnlineExperiments">Online Experiments</a></li>
+    </ul>
+  </div>
+
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -236,6 +244,578 @@
       </div>
       <!--/ Abstract. -->
 
+    </div>
+  </section>
+
+  <section class="section" id="OfflineExperiments">
+    <div class="container">
+      <!-- Offline Experiments -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Offline Experiments</h2>
+          <div class="table has-text-justified">
+            <table id="ScreenSpot">
+              <caption>ScreenSpot</caption>
+              <thead>
+                  <tr>
+                      <th rowspan="2" style="text-align: left; vertical-align: middle;">Planner</th>
+                      <th rowspan="2" style="text-align: left; vertical-align: middle;">Grounder</th>
+                      <th colspan="2">Mobile</th>
+                      <th colspan="2">Desktop  </th>
+                      <th colspan="2">Web  </th>
+                      <th rowspan="2" style="text-align: center; vertical-align: middle;">Average</th>
+                  </tr>
+                  <tr>
+                      <th>Text</th>
+                      <th>Icon/Widget</th>
+                      <th>Text</th>
+                      <th>Icon/Widget</th>
+                      <th>Text</th>
+                      <th>Icon/Widget</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="7" style="text-align: left; vertical-align: middle;">-</td>
+                  <td style="text-align: left;">GPT-4</td>
+                  <td>22.6</td>
+                  <td>24.5</td>
+                  <td>20.2</td>
+                  <td>11.8</td>
+                  <td>9.2</td>
+                  <td>8.8</td>
+                  <td>16.2</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">GPT-4o</td>
+                    <td>20.2</td>
+                    <td>24.9</td>
+                    <td>21.1</td>
+                    <td>23.6</td>
+                    <td>12.2</td>
+                    <td>7.8</td>
+                    <td>18.3</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">CogAgent</td>
+                    <td>67.0</td>
+                    <td>24.0</td>
+                    <td>74.2</td>
+                    <td>20.0</td>
+                    <td>70.4</td>
+                    <td>28.6</td>
+                    <td>47.4</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">SeeClick</td>
+                    <td>78.0</td>
+                    <td>52.0</td>
+                    <td>72.2</td>
+                    <td>30.0</td>
+                    <td>55.7</td>
+                    <td>32.5</td>
+                    <td>53.4</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">Qwen2-VL</td>
+                    <td>75.5</td>
+                    <td>60.7</td>
+                    <td>76.3</td>
+                    <td>54.3</td>
+                    <td>35.2</td>
+                    <td>25.7</td>
+                    <td>55.3</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">UGround</td>
+                    <td>82.8</td>
+                    <td>60.3</td>
+                    <td>82.5</td>
+                    <td>63.6</td>
+                    <td>80.4</td>
+                    <td>70.4</td>
+                    <td>73.3</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">AGUVIS-G-7B</td>
+                    <td><strong>88.3</strong></td>
+                    <td><strong>78.2</strong></td>
+                    <td><strong>88.1</strong></td>
+                    <td><strong>70.7</strong></td>
+                    <td><strong>85.7</strong></td>
+                    <td><strong>74.8</strong></td>
+                    <td><strong>81.8</strong></td>
+                </tr>
+
+
+                <tr>
+                    <td rowspan="3" style="text-align: left; vertical-align: middle;">GPT-4</td>
+                    <td style="text-align: left;">SeeClick</td>
+                    <td>76.6</td>
+                    <td>55.5</td>
+                    <td>68.0</td>
+                    <td>28.6</td>
+                    <td>40.9</td>
+                    <td>23.3</td>
+                    <td>48.8</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">OmniParser</td>
+                    <td>93.9</td>
+                    <td>57.0</td>
+                    <td>91.3</td>
+                    <td>63.6</td>
+                    <td>81.3</td>
+                    <td>51.0</td>
+                    <td>73.0</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">UGround</td>
+                    <td>90.1</td>
+                    <td>70.3</td>
+                    <td>87.1</td>
+                    <td>55.7</td>
+                    <td>85.7</td>
+                    <td>64.6</td>
+                    <td>75.6</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="text-align: left; vertical-align: middle;">GPT-4o</td>
+                    <td style="text-align: left;">SeeClick</td>
+                    <td>81.0</td>
+                    <td>59.8</td>
+                    <td>69.6</td>
+                    <td>33.6</td>
+                    <td>43.9</td>
+                    <td>26.2</td>
+                    <td>52.3</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">UGround</td>
+                    <td>93.4</td>
+                    <td>76.9</td>
+                    <td>92.8</td>
+                    <td>67.9</td>
+                    <td>88.7</td>
+                    <td>68.9</td>
+                    <td>81.4</td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="text-align: center;"><strong>AGUVIS-7B</strong></td>
+                  <td><strong>95.6</strong></td>
+                  <td><strong>77.7</strong></td>
+                  <td><strong>93.8</strong></td>
+                  <td><strong>67.1</strong></td>
+                  <td><strong>88.3</strong></td>
+                  <td><strong>75.2</strong></td>
+                  <td><strong>84.4</strong></td>
+              </tr>
+              <tr>
+                  <td colspan="2" style="text-align: center;"><strong>AGUVIS-72B</strong></td>
+                  <td><strong>94.5</strong></td>
+                  <td><strong>85.2</strong></td>
+                  <td><strong>95.4</strong></td>
+                  <td><strong>77.9</strong></td>
+                  <td><strong>91.3</strong></td>
+                  <td><strong>85.9</strong></td>
+                  <td><strong>89.2</strong></td>
+              </tr>
+                
+              </tbody>
+            </table>
+            <table id="Multimodal-Mind2Web">
+              <caption>Multimodal-Mind2Web</caption>
+              <thead>
+                  <tr>
+                      <th rowspan="2" style="text-align: center; vertical-align: middle;">Obs.</th>
+                      <th rowspan="2" style="text-align: center; vertical-align: middle;">Planner</th>
+                      <th rowspan="2" style="text-align: center; vertical-align: middle;">Grounder</th>
+                      <th colspan="3" style="text-align: center;">Cross-Task</th>
+                      <th colspan="3" style="text-align: center;">Cross-Website</th>
+                      <th colspan="3" style="text-align: center;">Cross-Domain</th>
+                  </tr>
+                  <tr>
+                      <th>Ele.Acc</th>
+                      <th>Op.F1</th>
+                      <th>Step SR</th>
+                      <th>Ele.Acc</th>
+                      <th>Op.F1</th>
+                      <th>Step SR</th>
+                      <th>Ele.Acc</th>
+                      <th>Op.F1</th>
+                      <th>Step SR</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td rowspan="2" style="text-align: center; vertical-align: middle;">T</td>
+                      <td>GPT-3.5</td>
+                      <td>Choice</td>
+                      <td>19.4</td>
+                      <td>59.2</td>
+                      <td>16.8</td>
+                      <td>14.9</td>
+                      <td>56.5</td>
+                      <td>14.1</td>
+                      <td>25.2</td>
+                      <td>57.9</td>
+                      <td>24.1</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-4</td>
+                      <td>Choice</td>
+                      <td>40.8</td>
+                      <td>63.1</td>
+                      <td>32.3</td>
+                      <td>30.2</td>
+                      <td>61.0</td>
+                      <td>27.0</td>
+                      <td>35.4</td>
+                      <td>61.9</td>
+                      <td>29.7</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="2" style="text-align: center; vertical-align: middle;">T + I</td>
+                      <td>GPT-4</td>
+                      <td>Choice</td>
+                      <td>46.4</td>
+                      <td>73.4</td>
+                      <td>40.2</td>
+                      <td>38.0</td>
+                      <td>67.8</td>
+                      <td>32.4</td>
+                      <td>42.4</td>
+                      <td>69.3</td>
+                      <td>36.8</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-4</td>
+                      <td>SoM</td>
+                      <td>29.6</td>
+                      <td>-</td>
+                      <td>20.3</td>
+                      <td>20.1</td>
+                      <td>-</td>
+                      <td>13.9</td>
+                      <td>27.0</td>
+                      <td>-</td>
+                      <td>23.7</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="2" style="text-align: center; vertical-align: middle;">I</td>
+                      <td>-</td>
+                      <td>SeeClick</td>
+                      <td>23.8</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>15.3</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>16.2</td>
+                      <td>-</td>
+                      <td>-</td>
+                  </tr>
+                  <tr>
+                      <td>-</td>
+                      <td>CogAgent</td>
+                      <td>54.2</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>50.0</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>54.7</td>
+                      <td>-</td>
+                      <td>-</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="3" style="text-align: center; vertical-align: middle;">I</td>
+                      <td>GPT-4o</td>
+                      <td>SeeClick</td>
+                      <td>32.1</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>33.1</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>33.5</td>
+                      <td>-</td>
+                      <td>-</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-4V</td>
+                      <td>OmniParser</td>
+                      <td>42.4</td>
+                      <td>87.6</td>
+                      <td>39.4</td>
+                      <td>41.0</td>
+                      <td>84.8</td>
+                      <td>36.5</td>
+                      <td>45.5</td>
+                      <td>85.7</td>
+                      <td>42.0</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-4o</td>
+                      <td>UGround</td>
+                      <td>47.7</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>46.0</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>46.6</td>
+                      <td>-</td>
+                      <td>-</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="2" style="text-align: center; vertical-align: middle;">I</td>
+                      <td colspan="2" style="text-align: center;">AGUVIS-7B</td>
+                      <td>64.2</td>
+                      <td>89.8</td>
+                      <td>60.4</td>
+                      <td>60.7</td>
+                      <td>88.1</td>
+                      <td>54.6</td>
+                      <td>60.4</td>
+                      <td><strong>89.2</strong></td>
+                      <td>56.6</td>
+                  </tr>
+                  <tr>
+                      <td colspan="2" style="text-align: center;">AGUVIS-72B</td>
+                      <td><strong>69.5</strong></td>
+                      <td><strong>90.8</strong></td>
+                      <td><strong>64.0</strong></td>
+                      <td><strong>62.6</strong></td>
+                      <td><strong>88.6</strong></td>
+                      <td><strong>56.5</strong></td>
+                      <td><strong>63.5</strong></td>
+                      <td>88.5</td>
+                      <td><strong>58.2</strong></td>
+                  </tr>
+              </tbody>
+            </table>
+            <table id="AndroidControl">
+              <caption>AndroidControl</caption>
+              <thead>
+                  <tr>
+                      <th rowspan="2" style="text-align: center; vertical-align: middle;">Observation</th>
+                      <th rowspan="2" style="text-align: center; vertical-align: middle;">Planner</th>
+                      <th rowspan="2" style="text-align: center; vertical-align: middle;">Grounder</th>
+                      <th colspan="2" style="text-align: center;">Step Accuracy</th>
+                  </tr>
+                  <tr>
+                      <th>High-Level</th>
+                      <th>Low-Level</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td rowspan="2" style="text-align: center; vertical-align: middle;">Acc. Tree</td>
+                      <td>GPT-4-Turbo</td>
+                      <td>Choice</td>
+                      <td>42.1</td>
+                      <td>55.0</td>
+                  </tr>
+                  <tr>
+                      <td>PaLM 2S (Specialized)</td>
+                      <td>Choice</td>
+                      <td>58.5</td>
+                      <td>77.5</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="4" style="text-align: center; vertical-align: middle;">Image</td>
+                      <td>GPT-4-Turbo</td>
+                      <td>SeeClick</td>
+                      <td>39.4</td>
+                      <td>47.2</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-4-Turbo</td>
+                      <td>UGround</td>
+                      <td>46.2</td>
+                      <td>58.0</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-4o</td>
+                      <td>SeeClick</td>
+                      <td>41.8</td>
+                      <td>52.8</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-4o</td>
+                      <td>UGround</td>
+                      <td>48.4</td>
+                      <td>62.4</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="2" style="text-align: center; vertical-align: middle;">Image</td>
+                      <td colspan="2" style="text-align: center;"><strong>AGUVIS-7B</strong></td>
+                      <td><strong>61.5</strong></td>
+                      <td><strong>80.5</strong></td>
+                  </tr>
+                  <tr>
+                      <td colspan="2" style="text-align: center;"><strong>AGUVIS-72B</strong></td>
+                      <td><strong>66.4</strong></td>
+                      <td><strong>84.4</strong></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="OnlineExperiments">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Online Experiments</h2>
+          <div class="table has-text-justified">
+            <table id="Mind2Web-Live">
+              <caption>Mind2Web-Live</caption>
+              <thead>
+                  <tr>
+                      <th>Inputs</th>
+                      <th>Planner</th>
+                      <th>Grounder</th>
+                      <th>Task SR</th>
+                      <th>USD Efficiency</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td rowspan="5" style="text-align: center; vertical-align: middle;">HTML</td>
+                      <td>GPT-4-Turbo</td>
+                      <td>Choice</td>
+                      <td>21.1</td>
+                      <td>-</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-4o</td>
+                      <td>Choice</td>
+                      <td>22.1</td>
+                      <td>0.142</td>
+                  </tr>
+                  <tr>
+                      <td>Llama-3.1-405B</td>
+                      <td>Choice</td>
+                      <td>24.0</td>
+                      <td>0.174</td>
+                  </tr>
+                  <tr>
+                      <td>Llama-3.1-70B</td>
+                      <td>Choice</td>
+                      <td>20.2</td>
+                      <td>0.031</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-3.5-turbo</td>
+                      <td>Choice</td>
+                      <td>17.3</td>
+                      <td>0.092</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="3" style="text-align: center; vertical-align: middle;">Image</td>
+                      <td>GPT-4-Turbo</td>
+                      <td>UGround</td>
+                      <td>23.1</td>
+                      <td>-</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-4o</td>
+                      <td>UGround</td>
+                      <td>19.2</td>
+                      <td>-</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-4o</td>
+                      <td><strong>AGUVIS-7B</strong></td>
+                      <td><strong>24.0</strong></td>
+                      <td>0.106</td>
+                  </tr>
+                  <tr>
+                      <td style="text-align: center; vertical-align: middle;">Image</td>
+                      <td colspan="2" style="text-align: center;"><strong>AGUVIS-72B</strong></td>
+                      <td><strong>27.1</strong></td>
+                      <td><strong>0.012</strong></td>
+                  </tr>
+              </tbody>
+            </table>
+
+            <table id="AndroidWorld">
+              <caption>AndroidWorld & MobileMiniWob</caption>
+              <thead>
+                  <tr>
+                      <th>Input</th>
+                      <th>Planner</th>
+                      <th>Grounding</th>
+                      <th>AndroidWorld<sub>SR</sub></th>
+                      <th>MobileMiniWob<sub>SR</sub></th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td rowspan="2" style="text-align: center; vertical-align: middle;">AXTree</td>
+                      <td>GPT-4-Turbo</td>
+                      <td>Choice</td>
+                      <td>30.6</td>
+                      <td>59.7</td>
+                  </tr>
+                  <tr>
+                      <td>Gemini 1.5 Pro</td>
+                      <td>Choice</td>
+                      <td>19.4</td>
+                      <td>57.4</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="2" style="text-align: center; vertical-align: middle;">Image + AXTree</td>
+                      <td>GPT-4-Turbo</td>
+                      <td>SoM</td>
+                      <td>25.4</td>
+                      <td>67.7</td>
+                  </tr>
+                  <tr>
+                      <td>Gemini 1.5 Pro</td>
+                      <td>SoM</td>
+                      <td>22.8</td>
+                      <td>40.3</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="3" style="text-align: center; vertical-align: middle;">Image</td>
+                      <td>GPT-4-Turbo</td>
+                      <td>UGround</td>
+                      <td>31.0</td>
+                      <td>-</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-4o</td>
+                      <td>UGround</td>
+                      <td>32.8</td>
+                      <td>-</td>
+                  </tr>
+                  <tr>
+                      <td>GPT-4o</td>
+                      <td><strong>AGUVIS-7B</strong></td>
+                      <td><strong>37.1</strong></td>
+                      <td><strong>55.0</strong></td>
+                  </tr>
+                  <tr>
+                      <td style="text-align: center; vertical-align: middle;">Image</td>
+                      <td colspan="2" style="text-align: center;"><strong>AGUVIS-72B</strong></td>
+                      <td><strong>26.1</strong></td>
+                      <td><strong>66.0</strong></td>
+                  </tr>
+              </tbody>
+            </table>
+
+            <table id="OSWorld">
+              <caption>OSWorld</caption>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
