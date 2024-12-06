@@ -205,6 +205,9 @@ td:hover {
   background-color: #ffffff;
 }
 
+
+/* ToC */
+
 .sidebar {
   position: fixed;
   top: 100px;
@@ -259,4 +262,98 @@ td:hover {
     .sidebar {
         display: none;
     }
+}
+
+/* InfoCard */
+
+.infoCard {
+  background: #fff;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .infoCard {
+    box-shadow: 0px 0px 15px 2px rgba(120,120,120,0.15);
+  }
+}
+.infoCard .infoSubheadline {
+  background: #f3f3f3;
+  padding: 20px 30px;
+}
+.infoCard .infoSubheadline h1,
+.infoCard .infoSubheadline h2,
+.infoCard .infoSubheadline p {
+  color: #888;
+}
+.infoCard .infoSubheadline h1 {
+  font-weight: 500;
+}
+.infoCard .infoSubheadline h2,
+.infoCard .infoSubheadline p {
+  font-weight: 400;
+}
+.infoCard .infoSubheadline.backgrounded {
+  background: #8970ef;
+}
+.infoCard .infoSubheadline.backgrounded h1,
+.infoCard .infoSubheadline.backgrounded h2,
+.infoCard .infoSubheadline.backgrounded p {
+  color: #fff;
+}
+.infoCard .actLink {
+  background: #8970ef;
+}
+.infoCard .actLink h1,
+.infoCard .actLink h2,
+.infoCard .actLink p,
+.infoCard .actLink a {
+  color: #fff;
+}
+.infoCard .actLink:hover {
+  opacity: 0.9;
+}
+.infoCard .infoBody {
+  padding: 30px;
+}
+.infoCard .infoBody >.infoHeadline {
+  margin: 15px 0px;
+}
+.infoCard .infoBody >.infoHeadline h1,
+.infoCard .infoBody >.infoHeadline h2,
+.infoCard .infoBody >.infoHeadline p {
+  margin: 5px 0px;
+  font-weight: 600;
+  color: #333;
+}
+.infoCard .infoBody >.infoHeadline h1 {
+  font-size: 1.8em;
+}
+.infoCard .infoBody >.infoHeadline h2 {
+  font-size: 1.4em;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #ddd;
+}
+.infoCard .infoBody h2 {
+  font-weight: 600;
+  color: #666;
+  font-size: 1.6em;
+}
+
+.highlight-quote {
+  background-color: #f9f9f9; /* Light background color */
+  border-left: 4px solid #007BFF; /* Blue left border */
+  padding: 10px 15px; /* Padding inside the block */
+  margin: 15px 0; /* Margin around the block */
+  color: #333; /* Text color */
+}
+.highlight-quote-title {
+  font-weight: bold; /* Bold font for title */
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 10px; /* Space between title and content */
+  color: #007BFF; /* Same color as the border */
+}
+.highlight-quote-content {
+  font-style: italic; /* Italic font style for content */
+}
+.highlight-quote-content pre {
+  overflow: auto; /* Ensure the content is scrollable if it's too wide */
 }

@@ -42,6 +42,7 @@
   <div class="sidebar">
     <h4>Table of Contents</h4>
     <ul>
+      <li><a href="#Explore">Explore AGUVIS Examples</a></li>
       <li><a href="#OfflineExperiments">Offline Experiments</a></li>
       <li><a href="#OnlineExperiments">Online Experiments</a></li>
     </ul>
@@ -245,6 +246,113 @@
       <!--/ Abstract. -->
 
     </div>
+  </section>
+
+
+  <section class="section" id="Explore">
+    <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+          <h2 class="title is-3">Explore AGUVIS Examples</h2>
+          <div class="infoCard">
+          <div class="infoBody">
+            <div class="tabs is-centered example_lst1">
+              <ul>
+                <li><a title="Android">Android</a></li>
+                <li><a title="Web">Web</a></li>
+                <li><a title="Desktop">Desktop</a></li>
+              </ul>
+
+            </div>
+            <script type="text/javascript">
+              document.querySelectorAll(".example_lst1 li").forEach(e => {
+                e.addEventListener("click", Click_1)
+              })
+
+              function Click_1(eve) {
+                const iTxt = eve.srcElement.innerText
+                for (let v of document.querySelectorAll(".example_lst1 a")) {
+                  if (iTxt === v.innerText) {
+                    v.parentElement.className = "is-active";
+                  } else {
+                    v.parentElement.className = "";
+                  }
+                }
+                for (let block of document.getElementsByClassName('lib_examples')) {
+                  block.style.display = (block.title === iTxt) ? 'block' : 'none';
+                }
+              }
+
+            </script>
+
+            <div title="Web" class="lib_examples" style="display: none;">
+              <h2 style="text-align: left;">Task Instruction</h2>
+              <div class="highlight-quote">
+                <div class="highlight-quote-content">
+                  Find technical specs for the latest Macbook Air on apple
+                </div>
+              </div>
+              <h2 style="text-align: left;">Video Recording</h2>
+              <video controls muted loop autoplay id="videoPlayer" width="100%">
+                <source src="static/videos/mind2web-live.mp4" type="video/mp4">
+              </video>
+              <script>
+                  const videoPlayer = document.getElementById('videoPlayer');
+                  // Set playback speed to 8x once the video metadata is loaded
+                  videoPlayer.addEventListener('loadedmetadata', function() {
+                      videoPlayer.playbackRate = 1;
+                      videoPlayer.play();
+                  });
+              </script>
+              
+            </div>
+
+            <div title="Android" class="lib_examples" style="display: none;">
+              <h2 style="text-align: left;">Task Instruction</h2>
+              <div class="highlight-quote">
+                <div class="highlight-quote-content">
+                  Delete all but one of any expenses in arduia pro expense that are exact duplicates, ensuring at least one instance of each unique expense remains.
+                </div>
+              </div>
+              <h2 style="text-align: left;">Video Recording</h2>
+              <video controls muted loop autoplay id="videoPlayer" width="40%">
+                <source src="static/videos/androidworld.mp4" type="video/mp4">
+              </video>
+              <script>
+                  const videoPlayer = document.getElementById('videoPlayer');
+                  // Set playback speed to 8x once the video metadata is loaded
+                  videoPlayer.addEventListener('loadedmetadata', function() {
+                      videoPlayer.playbackRate = 4;
+                      videoPlayer.play();
+                  });
+              </script>
+              
+            </div>
+
+            <div title="Desktop" class="lib_examples" style="display: block;">
+              <h2 style="text-align: left;">Task Instruction</h2>
+              <div class="highlight-quote">
+                <div class="highlight-quote-content">
+                  Can you help me clean up my computer by getting rid of all the tracking things that Amazon might have saved? I want to make sure my browsing is private and those sites don't remember me. We have opened the required app on the screen.
+                </div>
+              </div>
+              <h2 style="text-align: left;">Video Recording</h2>
+              <video controls muted loop autoplay id="videoPlayer" width="100%">
+                <source src="static/videos/osworld.mp4" type="video/mp4">
+              </video>
+              <script>
+                  const videoPlayer = document.getElementById('videoPlayer');
+                  // Set playback speed to 8x once the video metadata is loaded
+                  videoPlayer.addEventListener('loadedmetadata', function() {
+                      videoPlayer.playbackRate = 2;
+                      videoPlayer.play();
+                  });
+              </script>
+            </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <section class="section" id="OfflineExperiments">
